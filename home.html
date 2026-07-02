@@ -110,11 +110,17 @@ WrongBitch.co
 <li>Lower my standards.</li>
 <li>Entertain disrespect.</li>
 </ul>
+<button id="assumeBtn">ASSUME AGAIN</button>
 
+<<<<<<< HEAD
+<p id="result"></p>
+
+=======
 <button id="assumeBtn">ASSUME AGAIN</button>
 
 <p id="result"></p>
 
+>>>>>>> 220d1446f9bb24e809907f274741b22c399e177c
 </section>
 
 <script>
@@ -130,8 +136,27 @@ const messages = [
 document.getElementById("assumeBtn").onclick = function () {
   const random = Math.floor(Math.random() * messages.length);
   document.getElementById("result").innerHTML = messages[random];
-};
-</script>
+#assumeBtn{
+    background:#8b0000;
+    color:white;
+    border:none;
+    padding:15px 30px;
+    border-radius:30px;
+    font-size:18px;
+    cursor:pointer;
+    display:block;
+    margin:40px auto 20px;
+    transition:.3s;
+}
 
-</body>
-</html>
+#assumeBtn:hover{
+    background:red;
+    box-shadow:0 0 20px red;
+}
+
+#result{
+    text-align:center;
+    font-size:22px;
+    color:#ff4d4d;
+    min-height:30px;
+}
