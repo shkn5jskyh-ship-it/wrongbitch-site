@@ -86,7 +86,27 @@ WrongBitch.co
 <li>Entertain disrespect.</li>
 </ul>
 
+<button id="assumeBtn">ASSUME AGAIN</button>
+
+<p id="result"></p>
+
 </section>
+
+<script>
+const messages = [
+  "❌ Still wrong.",
+  "🚫 Try another theory.",
+  "💀 Access denied.",
+  "📵 Wrong person.",
+  "⚠️ Error 404: Correct assumption not found.",
+  "🔒 Better luck next time."
+];
+
+document.getElementById("assumeBtn").onclick = function () {
+  const random = Math.floor(Math.random() * messages.length);
+  document.getElementById("result").innerHTML = messages[random];
+};
+</script>
 
 </body>
 </html>
